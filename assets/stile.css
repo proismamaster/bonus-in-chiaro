@@ -250,6 +250,8 @@ h2{font-size:24px;line-height:30px;font-weight:700}
 .extra ul,.testo ul{margin-top:16px;display:flex;flex-direction:column;gap:12px;max-width:620px}
 .extra ul li,.testo ul li{padding-left:22px;position:relative;line-height:29px}
 .extra ul li::before,.testo ul li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:8px;border-radius:50%;background:var(--azione)}
+.avviso-bonus{margin-top:16px;max-width:620px;padding:14px 16px;border-radius:var(--r-2);background:var(--evidenza);color:var(--su-evidenza);font-weight:600;line-height:26px}
+.tag-avviso{background:var(--evidenza);color:var(--su-evidenza)}
 .trucco,.metodo{max-width:620px}
 .trucco{margin-top:14px;padding:14px 16px;border-radius:var(--r-2);background:var(--hover);border:1px solid var(--linea)}
 .trucco .trucco-t{margin:0;font-weight:700;font-size:15px;line-height:22px;color:var(--link)}
