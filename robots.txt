@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://proismamaster.github.io/bonus-in-chiaro/sitemap.xml
