@@ -5,6 +5,19 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const leggi = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
   const scrivi = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} };
+  // Tema: chiaro di base, scuro a scelta (lo script in <head> lo applica prima del disegno).
+  const temaBtn = document.querySelector('[data-tema-btn]');
+  if (temaBtn) {
+    const radice = document.documentElement;
+    const segna = () => temaBtn.setAttribute('aria-pressed', String(radice.dataset.tema === 'scuro'));
+    segna();
+    temaBtn.addEventListener('click', () => {
+      const scuro = radice.dataset.tema !== 'scuro';
+      if (scuro) radice.dataset.tema = 'scuro'; else delete radice.dataset.tema;
+      scrivi('tema', scuro ? 'scuro' : 'chiaro');
+      segna();
+    });
+  }
   const FMT = new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
   const fmt = iso => FMT.format(new Date(iso)).replace(/ /g, ' ');
   const oggi = new Date().toLocaleDateString('sv-SE'); // data locale AAAA-MM-GG

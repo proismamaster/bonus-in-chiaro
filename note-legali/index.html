@@ -19,6 +19,7 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/plex-sans.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{if(localStorage.getItem('tema')==='"scuro"')document.documentElement.dataset.tema='scuro'}catch(e){}</script>
 <link rel="stylesheet" href="../assets/stile.css">
 <script src="../assets/app.js" defer></script>
 </head>
@@ -26,8 +27,9 @@
 <a class="salta" href="#contenuto">Vai al contenuto</a>
 <header class="testata"><div class="wrap">
 <a class="marchio" translate="no" href="../"><svg class="marchio-segno" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#fff"/><g fill="none" stroke="#2747E8" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 11h15M8.5 21h5"/><path d="M17.5 20.5l3 3 5-6"/></g></svg><span>Bonus in chiaro</span></a>
-<nav class="nav" aria-label="Principale"><a href="../">Bonus</a><a href="../trucchi/">Trucchi</a><a href="../come-funziona/">Come funziona</a></nav>
-<details class="menu"><summary aria-label="Apri il menu"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary><nav class="menu-pannello" aria-label="Menu"><a href="../">Bonus</a><a href="../trucchi/">Trucchi</a><a href="../come-funziona/">Come funziona</a></nav></details>
+<nav class="nav" aria-label="Principale"><a href="../">Bonus</a><a href="../come-funziona/">Come funziona</a></nav>
+<details class="menu"><summary aria-label="Apri il menu"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary><nav class="menu-pannello" aria-label="Menu"><a href="../">Bonus</a><a href="../come-funziona/">Come funziona</a></nav></details>
+<button type="button" class="tema" data-tema-btn aria-pressed="false" aria-label="Tema scuro"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
 </div></header>
 <main id="contenuto" class="wrap"><article class="testo"><h1>Note legali</h1>
 <p class="piccolo tenue">Ultimo aggiornamento: 22 nov 2026.</p>
@@ -48,7 +50,7 @@
 <footer class="piede"><div class="wrap">
 <div class="piede-alto">
 <div class="piede-marchio"><a class="marchio" translate="no" href="../"><svg class="marchio-segno" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#2747E8"/><g fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 11h15M8.5 21h5"/><path d="M17.5 20.5l3 3 5-6"/></g></svg><span>Bonus in chiaro</span></a><p>Guide passo passo ai bonus di benvenuto di banche e app. Ogni promo è controllata sul regolamento ufficiale.</p></div>
-<nav class="piede-link" aria-label="Pagine del sito"><a href="../">Bonus</a><a href="../trucchi/">Trucchi</a><a href="../come-funziona/">Come funziona</a><a href="../privacy/">Privacy</a><a href="../cookie/">Cookie</a><a href="../note-legali/">Note legali</a></nav>
+<nav class="piede-link" aria-label="Pagine del sito"><a href="../">Bonus</a><a href="../come-funziona/">Come funziona</a><a href="../privacy/">Privacy</a><a href="../cookie/">Cookie</a><a href="../note-legali/">Note legali</a></nav>
 </div>
 <p class="piede-nota">Bonus in chiaro può ricevere un compenso quando apri un conto da un link di invito. Il compenso non cambia l'ordine dei bonus. Le informazioni del sito non sono consulenza finanziaria.</p>
 <p class="piede-nota">© 2026 Bonus in chiaro</p>
