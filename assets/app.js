@@ -156,4 +156,6 @@
       setTimeout(() => { lab.textContent = 'Copia il codice'; }, 1800);
     });
   }
+  // Niente menu «Salva immagine» sulle schermate delle guide.
+  document.addEventListener('contextmenu', e => { if (e.target.closest('.principale img')) e.preventDefault(); });
 })();

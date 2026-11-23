@@ -216,6 +216,11 @@ h2{font-size:24px;line-height:30px;font-weight:700}
 .bonus-grid{margin-top:28px;display:grid;gap:28px;align-items:start}
 .lato{order:-1;display:flex;flex-direction:column;gap:20px}
 .principale{min-width:0;display:flex;flex-direction:column;gap:44px}
+/* Guide non selezionabili né stampabili, immagini senza «salva» col tocco lungo; il codice invito si copia ancora. */
+.lead,.principale,.riquadro{-webkit-user-select:none;user-select:none}
+.principale img{-webkit-touch-callout:none;-webkit-user-drag:none}
+.codice code{-webkit-user-select:all;user-select:all}
+@media print{body>*{display:none!important}body::before{content:"Le guide di ChiaroBonus si leggono sul sito.";display:block;padding:32px;font-size:18px}}
 .riquadro{background:var(--superficie);border:1px solid var(--linea-forte);border-radius:var(--r-3);overflow:hidden}
 .importo{padding:20px 18px;background:var(--azione);color:var(--su-azione);display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
 .importo .etichetta{font-size:15px;line-height:20px;padding-bottom:8px}
