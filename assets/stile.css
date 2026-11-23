@@ -260,6 +260,7 @@ h2{font-size:24px;line-height:30px;font-weight:700}
 .passo:last-child .passo-dx{padding-bottom:0}
 .passo h3{font-size:19px;line-height:28px;font-weight:600}
 .passo p{margin-top:4px;line-height:29px;max-width:620px}
+.passo .btn{margin-top:14px;min-height:48px;padding:0 20px;font-size:16px}
 .passo img,.metodo img{display:block;margin-top:12px;width:auto;max-width:100%;max-height:480px;height:auto;border:1px solid var(--linea-forte);border-radius:var(--r-2)}
 .extra ul,.testo ul{margin-top:16px;display:flex;flex-direction:column;gap:12px;max-width:620px}
 .extra ul li,.testo ul li{padding-left:22px;position:relative;line-height:29px}
